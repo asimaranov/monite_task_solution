@@ -1,1 +1,12 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+markdown: kramdown
+include:
+  - solution.md
+
 theme: jekyll-theme-cayman
+github:
+  is_project_page: false
