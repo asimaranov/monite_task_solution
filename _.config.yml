@@ -4,8 +4,7 @@ relative_links:
   enabled: true
   collections: true
 markdown: kramdown
-name: Monite task solution
-title: null
+
 include:
   - solution.md
 github:
