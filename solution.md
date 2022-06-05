@@ -19,12 +19,13 @@ You have to create an architecture of Search service that
 
 # Solution
 Let's imagine that we use postgresql as the database. 
-To solve this task I'll preferably use the **Elasticsearch with PGSync** approach
+To solve this task I'll preferably use the **Elasticsearch with PGSync** approach.
+
 But let me describe several approaches that can be considered depending on the specific task
 
 ## Search data replication
 ![](2022-06-05-10-30-56.png)
-That approach can be used if we just want to query some data and do not do a complex search. In that case we'll set up the postgresql logical replication to get the copy of actual databases needed for searching. 
+That approach can be used if we just want to query some data and do not do a complex search. In that case I'll set up the postgresql logical replication to get the replica of actual databases needed for searching. 
 
 ## Elasticsearch at the CRUD level
 ![](2022-06-05-16-09-02.png)
@@ -33,4 +34,4 @@ In this approach I'll use elasticsearch to perform fast and complex searches and
 ## Elasticsearch with PGSync
 ![](2022-06-05-16-10-38.png)
 Here I'll use PGSync to syncronize elasticsearch with postgresql database. This way combines all the benefits of elasticsearch and takes on data syncronization problems
-Access restriction can be implemented at search microservice by adding access restriction policy to the filter inside search microservice.
+Access restriction can be implemented at search microservice by adding access restriction policy to the filter inside search microservice
