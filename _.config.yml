@@ -4,6 +4,7 @@ relative_links:
   enabled: true
   collections: true
 markdown: kramdown
+title: "Monite task solution"
 include:
   - solution.md
 github:
