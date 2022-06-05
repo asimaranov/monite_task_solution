@@ -3,4 +3,6 @@ theme: jekyll-theme-cayman
 github:
   is_project_page: false
 
-title: "Monite task solution"
+
+name: Monite task solution
+title: null
