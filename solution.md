@@ -33,4 +33,5 @@ In this approach I'll use elasticsearch to perform fast and complex searches and
 ## Elasticsearch with PGSync
 ![](2022-06-05-16-10-38.png)
 Here I'll use PGSync to syncronize elasticsearch with postgresql database. This way combines all the benefits of elasticsearch and takes on data syncronization problems
+
 Access restriction can be implemented at search microservice by adding access restriction policy to the filter inside search microservice
