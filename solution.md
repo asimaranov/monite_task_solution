@@ -19,8 +19,7 @@ You have to create an architecture of Search service that
 
 # Solution
 Let's imagine that we use postgresql as the database. 
-To solve this task I'll preferably use the **Elasticsearch with PGSync** approach.
-
+To solve this problem I will preferably use the **Elasticsearch with PGSync** approach.
 But let me describe several approaches that can be considered depending on the specific task
 
 ## Search data replication
