@@ -28,10 +28,9 @@ That approach can be used if we just want to query some data and do not do a com
 
 ## Elasticsearch at the CRUD level
 ![](2022-06-05-16-09-02.png)
-In this approach I'll use elasticsearch to perform fast and complex searches and easily manage access restriction policies. We will add send requests to the ES service from CRUD endpoints of our services 
+In this approach I'll use elasticsearch to perform fast and complex searches and manage access restriction policies. CRUD endpoints of the services will make requests to the elasticsearch microservice to sync the data with ES. Then search microservice will request elasticsearch for searching with restriction policy that can be implemented by adding desired filter parameter
 
 ## Elasticsearch with PGSync
 ![](2022-06-05-16-10-38.png)
-Here I'll use PGSync to syncronize elasticsearch with postgresql database. This way combines all the benefits of elasticsearch and takes on data syncronization problems
+Just like previous one but here I'll use PGSync to syncronize elasticsearch with postgresql database. I will just create a PGSync config that defines relation between postgresql database schemas and elasticsearch document structures. This way combines all the benefits of elasticsearch and takes on the data syncronization problems
 
-Access restriction can be implemented at search microservice by adding access restriction policy to the filter inside search microservice
