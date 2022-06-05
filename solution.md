@@ -1,4 +1,3 @@
-# The monite task solution
 # The task
 ## Context
 We have a set of microservices: invoices, transactions, receipts, contracts, and credit cards. Each service works in a separate container and talks to a separate database.
