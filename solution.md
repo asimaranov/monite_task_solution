@@ -28,7 +28,7 @@ That approach can be used if we just want to query some data and do not do a com
 
 ## Elasticsearch at the CRUD level
 ![](2022-06-05-16-09-02.png)
-In this approach I'll use elasticsearch to perform fast and complex searches and manage access restriction policies. CRUD endpoints of the services will make requests to the elasticsearch microservice to sync the data with ES. Then search microservice will request elasticsearch for searching with restriction policy that can be implemented by adding desired filter parameter
+In this approach I'll use elasticsearch to perform fast and complex searches and manage access restriction policies. CRUD endpoints of the services will make requests to the elasticsearch microservice to sync the data with ES. Then search microservice will request elasticsearch for searching with restriction policy that can be implemented by using document level security and by adding desired filter parameter
 
 ## Elasticsearch with PGSync
 ![](2022-06-05-16-10-38.png)
